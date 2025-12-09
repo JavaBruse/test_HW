@@ -35,16 +35,16 @@ mvn test -Dtest=WikipediaTests
 
 ### 2. Мобильные тесты (Wikipedia)
 Приложение скачано [app-alpha-universal-release.apk](https://github.com/wikimedia/apps-android-wikipedia/releases/tag/latest)
-- Запустить Android эмулятор
+- Запуск Android эмулятора
     ```bash
     emulator -avd Pixel_5
     ```
 ![img_2.png](img_2.png)
-- Загрузка прилоджения на эмулятор
+- Загрузка приложения на эмулятор
 ```bash
 adb -s emulator-5554 install app-alpha-universal-release.apk
 ```
-- Запустить Appium сервер:
+- Запуск Appium сервера
     ```bash
     appium -p 4723
     ```
@@ -53,4 +53,6 @@ adb -s emulator-5554 install app-alpha-universal-release.apk
 ```bash
 mvn test -Dtest=WikipediaMobileTests
 ```
+
+
 
